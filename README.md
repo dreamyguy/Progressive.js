@@ -52,3 +52,21 @@ Progressive.js is a work-in-progress. If you come across any issues not mentione
 - Multiple enhancements cannot be applied to individual elements
 - You can only use a class name to select elements
 - The fallback in browsers that don't support CSS animations uses the `onload` event. It would be nicer to use `DOMContentLoaded` where available.
+
+##Contribute
+
+If you would like to contribute, I would advise you to setup `grunt` locally. That way the javascript is both automatically checked for syntax errors and minified before your changes are pushed to the remote branch.
+
+You will need to have `grunt` installed globally. Run:
+
+    npm install -g grunt-cli
+
+Once you have installed `grunt` globally, run:
+
+    npm install
+
+...while at the root of this repository. The dependencies/plugins will be retrieved and you'll have `grunt` running the linting and minification tasks on the background as you develop, by running:
+
+    grunt watch
+
+Run this command on a dedicated shell so that it keeps running uninterrupted. Enjoy!
